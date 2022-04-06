@@ -191,7 +191,7 @@ function Home() {
             <div className="HomeSection" >
                 <Section  setting = {setting} otherPensilsetting={otherPencilSetting.pencil} otherShareSetting={otherShareSetting} otherGroupsetting={otherGroupsetting} io = {io} userdata = {userdata}/> 
                 {/* <Group setting = {otherGroupsetting.group} userdata=  {userdata.roomtype}/> */}
-                <Chat  setting = {otherChatsetting.chat} io = {io} userdata = {userdata}/>      
+                {/* <Chat  setting = {otherChatsetting.chat} io = {io} userdata = {userdata}/>       */}
                 <div className="footer">
                     <div className="menu">
                         <p className="user_name">{userdata.nickname}님</p>
@@ -212,33 +212,33 @@ function Home() {
                                         }
                                     </div>
                                 </div>
-                                <div className="previewInform">
+                                {/* <div className="previewInform">
                                     <div id = "zxc7" className="preview_p">화면 공유</div>
                                     <div className="circleIcon"  onClick={e=>onClickShare(e)} onMouseOver={()=>onMouseover("zxc7")} onMouseLeave={()=>onMouseLeave("zxc7")} >
                                                                               
                                            <BsArrowUpSquare  className="icon" />
                                     
                                     </div>
-                                </div>
-                                <div className="previewInform">
+                                </div> */}
+                                {/* <div className="previewInform">
                                     <div id = "zxc4"className="preview_p">채팅하기</div>
                                     <div className="circleIcon" onClick={onClickChat} onMouseOver={()=>onMouseover("zxc4")} onMouseLeave={()=>onMouseLeave("zxc4")}>
                                         <BsChatSquareDots className="icon" />
                                     </div>
-                                </div>
-                                <div className="previewInform">
+                                </div> */}
+                                {/* <div className="previewInform">
                                     <div id = "zxc6"className="preview_p">필기하기</div>
                                     <div className="circleIcon" onClick={onClickPencil} onMouseOver={()=>onMouseover("zxc6")} onMouseLeave={()=>onMouseLeave("zxc6")}>
                                         <BsPencil className="icon" />
                                     </div>
-                                </div>
+                                </div> */}
                                
-                                <div className="previewInform">
+                                {/* <div className="previewInform">
                                     <div id = "zxc5" className="preview_p">자막</div>
                                     <div className="circleIcon" onClick={onClickGroup} onMouseOver={()=>onMouseover("zxc5")} onMouseLeave={()=>onMouseLeave("zxc5")}>
                                       <MdOutlineSubtitles className="icon fullscreen"/>
                                     </div>      
-                                </div>
+                                </div> */}
                                 <div className="previewInform">
                                     <div id = "zxc3"className="preview_p">회의 나가기</div>
                                     <div className="exit" onClick={onClickExit} onMouseOver={()=>onMouseover("zxc3")} onMouseLeave={()=>onMouseLeave("zxc3")} >

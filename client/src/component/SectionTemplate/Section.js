@@ -1,11 +1,11 @@
-import React ,{ useEffect, useRef,useState}from 'react'
+import React, { useEffect, useRef,useState } from 'react'
 import { receiveSubtitleData, receiveTranslateSubtitleData } from '../../store/action'
 import './Section.scss'
 import Video from '../VideoTemplate/index'
 import Video2 from '../VideoTemplate/index2'
-import {Grid} from 'semantic-ui-react'
+import { Grid } from 'semantic-ui-react'
 import useMedia from '../../useMedia'
-import { useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import {receiveGazeData} from '../../store/action'
 import { Notify } from "notiflix";
 import socket from 'socket.io-client'
@@ -279,7 +279,6 @@ function Section(props) {
             console.log("화면공유: 기존 STT STOP")
 
             recognition = new SpeechRecognition();
-
             console.log("화면공유 recognition 리셋")
             recognition.continuous = true;
             recognition.interimResults = true;
