@@ -16,8 +16,8 @@ import Pencil from './PencilTemplate/Pencil';
 //배포용 서버 주소
 //const SERVERPATH = "https://realtimeserver.paas-ta.org/"
 // 테스트용 서버주소
-// const SERVERPATH = "http://localhost:8080/"
-const SERVERPATH = "https://realtimeserver.paas-ta.org/"
+const SERVERPATH = "http://localhost:8080/"
+// const SERVERPATH = "https://realtimeserver.paas-ta.org/"
 //  const SERVERPATH = "http://localhost:8080/"
 const io = socket.connect(SERVERPATH);
 
@@ -54,15 +54,16 @@ function Home() {
     const {id} = useParams() // roomname
     useEffect(()=> {
         //roomname을 잘못 치고 들어온경우
+        let redirectPath = 'http://localhost:5000/errorpage'
         if(window.performance.navigation.type ===1) {
-           window.location.assign("https://pedantic-einstein-75bdbe.netlify.app/errorpage")
+           window.location.assign(redirectPath)
         }
         if(userdata.roomname!==id) {
-            window.location.assign("https://pedantic-einstein-75bdbe.netlify.app/errorpage")
+            window.location.assign(redirectPath)
             //userdata가 다르다고  에러페이지로 전송
         }
         if(userdata.nickname==="") {
-            window.location.assign("https://pedantic-einstein-75bdbe.netlify.app/errorpage")
+            window.location.assign(redirectPath)
         }
         
 
